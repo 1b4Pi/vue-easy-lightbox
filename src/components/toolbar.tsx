@@ -32,7 +32,7 @@ export const Toolbar = defineComponent({
   setup(props) {
     return () => {
       return (
-        <div class={`${prefixCls}-toolbar`}>
+        <div class={`${prefixCls}-toolbar z-max`}>
           <div
             role="button"
             aria-label="zoom in button"

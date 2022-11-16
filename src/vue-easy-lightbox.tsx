@@ -562,7 +562,7 @@ export default defineComponent({
         <div
           role="button"
           aria-label="previous image button"
-          class={`btn__prev ${isDisabled ? 'disable' : ''}`}
+          class={`btn__prev z-max ${isDisabled ? 'disable' : ''}`}
           onClick={onPrev}
         >
           {props.rtl ? <SvgIcon type="next" /> : <SvgIcon type="prev" />}
@@ -586,7 +586,7 @@ export default defineComponent({
         <div
           role="button"
           aria-label="next image button"
-          class={`btn__next ${isDisabled ? 'disable' : ''}`}
+          class={`btn__next z-max ${isDisabled ? 'disable' : ''}`}
           onClick={onNext}
         >
           {props.rtl ? <SvgIcon type="prev" /> : <SvgIcon type="next" />}
@@ -603,7 +603,7 @@ export default defineComponent({
         <div
           role="button"
           aria-label="close image preview button"
-          class={`btn__close`}
+          class={`btn__close z-max`}
           onClick={closeModal}
         >
           <SvgIcon type="close" />
