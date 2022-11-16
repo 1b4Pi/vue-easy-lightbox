@@ -16,14 +16,14 @@ export const Toolbar = defineComponent({
       type: Function as PropType<MouseEventHandler>,
       default: voidFn
     },
-    rotateLeft: {
-      type: Function as PropType<MouseEventHandler>,
-      default: voidFn
-    },
-    rotateRight: {
-      type: Function as PropType<MouseEventHandler>,
-      default: voidFn
-    },
+    // rotateLeft: {
+    //   type: Function as PropType<MouseEventHandler>,
+    //   default: voidFn
+    // },
+    // rotateRight: {
+    //   type: Function as PropType<MouseEventHandler>,
+    //   default: voidFn
+    // },
     resize: {
       type: Function as PropType<MouseEventHandler>,
       default: voidFn
@@ -58,24 +58,6 @@ export const Toolbar = defineComponent({
             onClick={props.resize}
           >
             <SvgIcon type="resize" />
-          </div>
-
-          <div
-            role="button"
-            aria-label="image rotate left button"
-            class="toolbar-btn toolbar-btn__rotate"
-            onClick={props.rotateLeft}
-          >
-            <SvgIcon type="rotate-left" />
-          </div>
-
-          <div
-            role="button"
-            aria-label="image rotate right button"
-            class="toolbar-btn toolbar-btn__rotate"
-            onClick={props.rotateRight}
-          >
-            <SvgIcon type="rotate-right" />
           </div>
         </div>
       )

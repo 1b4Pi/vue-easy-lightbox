@@ -617,16 +617,10 @@ export default defineComponent({
           toolbarMethods: {
             zoomIn,
             zoomOut,
-            rotate: rotateLeft,
-            rotateLeft,
-            rotateRight,
             resize
           },
           zoomIn,
           zoomOut,
-          rotate: rotateLeft,
-          rotateLeft,
-          rotateRight,
           resize
         })
       ) : (
@@ -634,8 +628,6 @@ export default defineComponent({
           zoomIn={zoomIn}
           zoomOut={zoomOut}
           resize={resize}
-          rotateLeft={rotateLeft}
-          rotateRight={rotateRight}
         />
       )
     }
