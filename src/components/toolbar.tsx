@@ -32,10 +32,10 @@ export const Toolbar = defineComponent({
   setup(props) {
     return () => {
       return (
-        <div class={`${prefixCls}-toolbar`}>
+        <div class={`${prefixCls}-toolbar fit`}>
           <div
             role="button"
-            aria-label='zoom in button'
+            aria-label="zoom in button"
             class="toolbar-btn toolbar-btn__zoomin"
             onClick={props.zoomIn}
           >
@@ -44,7 +44,7 @@ export const Toolbar = defineComponent({
 
           <div
             role="button"
-            aria-label='zoom out button'
+            aria-label="zoom out button"
             class="toolbar-btn toolbar-btn__zoomout"
             onClick={props.zoomOut}
           >
@@ -53,7 +53,7 @@ export const Toolbar = defineComponent({
 
           <div
             role="button"
-            aria-label='resize image button'
+            aria-label="resize image button"
             class="toolbar-btn toolbar-btn__resize"
             onClick={props.resize}
           >
@@ -62,7 +62,7 @@ export const Toolbar = defineComponent({
 
           <div
             role="button"
-            aria-label='image rotate left button'
+            aria-label="image rotate left button"
             class="toolbar-btn toolbar-btn__rotate"
             onClick={props.rotateLeft}
           >
@@ -71,7 +71,7 @@ export const Toolbar = defineComponent({
 
           <div
             role="button"
-            aria-label='image rotate right button'
+            aria-label="image rotate right button"
             class="toolbar-btn toolbar-btn__rotate"
             onClick={props.rotateRight}
           >
