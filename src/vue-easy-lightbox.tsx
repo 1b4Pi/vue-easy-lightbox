@@ -503,7 +503,7 @@ export default defineComponent({
     const renderImgWrapper = () => {
       return (
         <div
-          class={`${prefixCls}-img-wrapper`}
+          class={`${prefixCls}-img-wrapper z-max`}
           style={imgWrapperStyle.value}
           key="img-wrapper"
         >
@@ -675,7 +675,7 @@ export default defineComponent({
             {renderWrapper()}
           </Transition>
           {renderTestImg()}
-          <div class={`${prefixCls}-btns-wrapper`}>
+          <div class={`${prefixCls}-btns-wrapper fit`}>
             {renderPrevBtn()}
             {renderNextBtn()}
             {renderImgTitle()}
