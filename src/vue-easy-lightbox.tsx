@@ -103,7 +103,7 @@ export default defineComponent({
     }
   },
   emits: {
-    'on-shop': () => true,
+    'on-shop': (shop: boolean) => true,
     hide: () => true,
     /* eslint-disable @typescript-eslint/no-unused-vars */
     'on-error': (e: Event) => true,
