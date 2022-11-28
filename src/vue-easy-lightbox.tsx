@@ -103,6 +103,7 @@ export default defineComponent({
     }
   },
   emits: {
+    'on-shop': () => true,
     hide: () => true,
     /* eslint-disable @typescript-eslint/no-unused-vars */
     'on-error': (e: Event) => true,
@@ -282,6 +283,10 @@ export default defineComponent({
       if (newScale > props.minZoom) {
         zoom(newScale)
       }
+    }
+
+    const emitShop = () => {
+      emit('on-shop', true)
     }
 
     const emitRotate = () => {
@@ -628,6 +633,7 @@ export default defineComponent({
           zoomIn={zoomIn}
           zoomOut={zoomOut}
           resize={resize}
+          shopNow={emitShop}
         />
       )
     }

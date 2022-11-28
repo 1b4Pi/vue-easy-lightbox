@@ -16,6 +16,10 @@ export const Toolbar = defineComponent({
       type: Function as PropType<MouseEventHandler>,
       default: voidFn
     },
+    shopNow: {
+      type: Function as PropType<MouseEventHandler>,
+      default: voidFn
+    },
     // rotateLeft: {
     //   type: Function as PropType<MouseEventHandler>,
     //   default: voidFn
@@ -56,6 +60,14 @@ export const Toolbar = defineComponent({
             aria-label="resize image button"
             class="toolbar-btn toolbar-btn__resize"
             onClick={props.resize}
+          >
+            <SvgIcon type="resize" />
+          </div>
+          <div
+            role="button"
+            aria-label="resize image button"
+            class="toolbar-btn toolbar-btn__resize"
+            onClick={props.shopNow}
           >
             <SvgIcon type="resize" />
           </div>
