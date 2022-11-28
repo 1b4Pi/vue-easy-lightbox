@@ -286,6 +286,7 @@ export default defineComponent({
     }
 
     const emitShop = () => {
+      console.log('on-shop emit')
       emit('on-shop')
     }
 
