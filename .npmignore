@@ -2,7 +2,7 @@
 examples/
 public/
 bin/
-build/
+# build/
 test-dist/
 build-scripts/
 demos/
