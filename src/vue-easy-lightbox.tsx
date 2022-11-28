@@ -103,9 +103,9 @@ export default defineComponent({
     }
   },
   emits: {
-    'on-shop': (shop: boolean) => true,
     hide: () => true,
     /* eslint-disable @typescript-eslint/no-unused-vars */
+    'on-shop': () => true,
     'on-error': (e: Event) => true,
     'on-prev': (oldIndex: number, newIndex: number) => true,
     'on-next': (oldIndex: number, newIndex: number) => true,
@@ -286,7 +286,7 @@ export default defineComponent({
     }
 
     const emitShop = () => {
-      emit('on-shop', true)
+      emit('on-shop')
     }
 
     const emitRotate = () => {
