@@ -69,7 +69,7 @@ export const Toolbar = defineComponent({
             class="toolbar-btn toolbar-btn__resize"
             onClick={props.shopNow}
           >
-            <SvgIcon type="resize" />
+            <SvgIcon type="shop" />
           </div>
         </div>
       )
